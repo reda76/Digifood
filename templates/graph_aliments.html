@@ -1,0 +1,18 @@
+
+{% include "modules/header.html" %}
+
+<html>
+
+    <body>
+        <div class="bloc_graph">
+            <h1>GRAPHIQUE NUTRITIONNEL</h1>
+            <!-- #?pasdecachesvp = pas de stockage de l'image dans le cache -->
+            <img src="{{url_for('static', filename=image)}}?pasdecachesvp"
+                 height=100% width= 100% alt=""/>
+        </div>
+    </body>
+
+</html>
+
+{% include "modules/footer.html" %}
+

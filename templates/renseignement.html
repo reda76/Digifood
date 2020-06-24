@@ -1,0 +1,57 @@
+{% include "modules/header.html" %}
+<body>
+<section class="page-acceuil" id="page-acceuil">
+    <div class="container">
+        <div class="regform"><h1>RENSEIGNEMENTS</h1></div>
+            <div class="main">
+        <form>
+               
+        <h2 class="name">Votre Age</h2>
+        <input class="renseignement" type="text" name="company">
+            
+        <h2 class="name">Votre Taille</h2>
+        <input class="renseignement" type="text" name="company">
+        
+        <h2 class="name">Votre Poid</h2>
+        <input class="renseignement" type="text" name="company">
+        
+        <h2 class="name">Vos Allérgies</h2>
+        <input class="renseignement" type="text" name="company">
+            
+        <h2 class="name">Votre Objectif</h2>
+        <select class="option" name="subject">
+        <option disabled="disabled" selected="selected">
+            --Quel est votre objectif ?</option>
+        <option>Perte de poids</option>
+        <option>Prise de poids</option>
+        <option>Santé</option>
+        <option>Autre</option>
+        </select>
+            
+        <h2 class="name">Sportif</h2>
+        <select class="option" name="subject">
+        <option disabled="disabled" selected="selected">
+            --Quel est votre niveau sportif ?</option>
+        <option>Pas sportif</option>
+        <option>Un peu sportif</option>
+        <option>Moyennement sportif</option>
+        <option>Beaucoup sportif</option>
+        </select>
+            
+        <h2 id="genre">Genre </h2>
+        <label class="radio">
+        <input type="radio"   name="nom_variable"   value="choix1"> 
+        <span class="checkmark"></span>
+        Femme
+        <input type="radio"   name="nom_variable"   value="choix2">  
+        <span class="checkmark"></span>
+        Homme
+        <
+        </label> 
+            <button class="btn cta-btn" type="submit">Ok</button>
+            
+        </form>
+    </div>
+    </div>
+</section>
+{% include "modules/footer.html" %}

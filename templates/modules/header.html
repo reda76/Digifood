@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+                    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DIGIFOOD</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--Scroll reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',
+                                            filename='css/styles.css') }}">
+
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <a href="/" class="logo"><img src="static/images/logo-digifood.png" alt=""></a>
+                <ul class="nav-list">
+
+                    <li class="nav-item">
+                        <a href="/" class="nav-link active">Accueil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/saisonnalite" class="nav-link">Saison</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="liste_aliments" class="nav-link">Conseils Repas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/menu_sportif" class="nav-link">Menu Sportif</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="/renseignement" class="nav-link">Renseignement</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/creation_compte" class="nav-link">S'inscrire</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/formulaire_authentification" class="nav-link">Connexion</a>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</body>
+</html>

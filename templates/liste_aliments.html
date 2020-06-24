@@ -1,0 +1,63 @@
+{% include "modules/header.html" %}
+
+<body>
+    <section class="page-acceuil" id="page-acceuil">
+        <div class="container">
+            <div class="nutrition-info">
+                <div class="nutrition-description padding-right animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            <span class="first-letter">S</span>aisissez
+                        </h2>
+                        <h1 class="headline">vos aliments</h1>
+                        <div class="asterisk-white"><i class="fas fa-asterisk"></i>
+                        </div>
+                    </div>
+                    <p class="pourquoi_bio">
+                        Veuillez renseigner les champs.
+                    </p>
+                    <a href="/formulaire_graphe" class="btn body-btn">Conseils nutrionnels</a>
+                </div>
+    <div class="container">
+        <div class="regform"><h1>SELECTION ALIMENTS</h1></div>
+            <div class="main">
+        <form>
+
+        <h2 class="name">Viandes</h2>
+        <input class="renseignement" type="text" name="company">
+
+        <h2 class="name">Légumes</h2>
+        <input class="renseignement" type="text" name="company">
+
+        <h2 class="name">Fromages</h2>
+        <input class="renseignement" type="text" name="company">
+
+        <h2 class="name">Fruits</h2>
+        <input class="renseignement" type="text" name="company">
+
+        <h2 class="name">Votre ressenti</h2>
+        <select class="option" name="subject">
+        <option disabled="disabled" selected="selected">
+            --Quel est votre ressenti ?</option>
+        <option valeur="Mal de tête">Mal de tête</option>
+         <option valeur="Soulagement">Soulagement</option>
+         <option valeur="Vomissement">Vomissement</option>
+         <option valeur="Légèreté">Légèreté</option>
+         <option valeur="Lourdeur">Lourdeur</option>
+         <option valeur="Calme">Calme</option>
+         <option valeur="Nerveux">Nerveux</option>
+         <option valeur="Manque de concentration">Manque de concentration</option>
+         <option valeur="Meileure concentration">Meileure concentration</option>
+         <option valeur="Fatigue">Fatigue</option>
+         <option valeur="Dynamique">Dynamique</option>
+        </select>
+
+         <br><br>
+
+          <button class="btn cta-btn" type="submit">Ok</button>
+        </form>
+    </div>
+    </div>
+</section>
+
+{% include "modules/footer.html" %}

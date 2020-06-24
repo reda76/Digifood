@@ -1,0 +1,24 @@
+{% include "modules/header.html" %}
+
+
+<body>
+
+<section class="page-acceuil" id="page-acceuil">
+    <div class="container">
+        <div class="regform"><h1>CONNEXION</h1></div>
+        <div class="main">
+    <form method="post" action="{{ url_for('traitement_authentification') }}">
+      <h2 class="name">Mail</h2>
+          <input class="renseignement" type="email" name="mail" required>
+          <br><br>
+      <h2 class="name">Mot de passe</h2>   
+          <input class="renseignement" type="password" name="mot_de_passe" 
+          required minlength="4" maxlength="20" size="20">
+          <br><br>
+     <button class="btn cta-btn" type="submit">Ok</button>
+    </form>
+  </div>
+</div>
+</section>
+{% include "modules/footer.html" %}
+

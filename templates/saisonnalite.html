@@ -1,0 +1,51 @@
+{% include "modules/header.html" %}
+ <!--   <title>Saisonnalité</title>   -->
+</head>
+
+<body>
+<section class="page-acceuil">
+        <div class="box">
+            <div class="content_saisons">
+                <h2 class="content_titre">La saison :</h2><br/>
+                    <ul class="">
+                    {% for s in saison.keys() %}
+                        <li class="content_li">{{ s }}</li>
+                    {% endfor %}
+                    </ul>
+            </div>
+            <div class="content_fruits">
+                <h2 class="content_titre">Sélection de fruits de saison:</h2><br/>
+                    <ul class="content_ul">
+                    {% for fruit in liste_fruits.keys() %}
+                        <li class="content_li">{{ fruit }}</li>
+                    {% endfor %}
+                    </ul>
+            </div>
+            <div class="content_legumes">
+                <h2  class="content_titre">Sélection de légumes de saison:</h2><br/>
+                <ul class="content_ul">
+                {% for legume in liste_legumes.keys() %}
+                    <li class="content_li">{{ legume }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div class="content_article">
+                <h2  class="content_titre">Pourquoi consommer des fruits et légumes ?</h2><br/>
+                <p class="content_p">Des fruits et des légumes:
+                    au moins 5 par jour, par exemple 3 portions de légumes et 2 fruits
+                    Ou 4 de légumes et 1 fruit.</p>
+                <p class="content_p">Si vous en mangez moins, sachez qu’augmenter même
+                 légèrement sa consommation de légumes et de fruits est bon pour la santé.</p>
+                <p class="content_p">L’idéal est d’alterner entre fruits et légumes,
+                d’en diversifier les variétés et de les intégrer le plus souvent possible
+                dans vos recettes: gratins, tartes salées ou sucrées</p>
+                <p class="content_p">’ils sont riches en vitamines, en minéraux, en fibres et
+                parce que leur effet favorable sur la santé a été démontré.</p>
+            </div>
+
+        </div>
+</section>
+</body>
+
+</html>
+{% include "modules/footer.html" %}

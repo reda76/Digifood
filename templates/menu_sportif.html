@@ -1,0 +1,86 @@
+{% include "modules/header.html" %}
+
+    <!--Header ends-->
+    <section class="page-acceuil">
+        <div class="container">
+            <h2 class="sub-headline">
+                <span class="first-letter">M</span>enu
+            </h2>
+            <h1 class="headline">des sportifs</h1>
+            <div class="headline-description">
+                <div class="separator">
+                    <div class="line line-left"></div>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i>
+                    </div>
+                    <div class="line line-right"></div>
+                </div>
+                <div class="single-animation">
+                    <h5>Du Dimanche au Lundi</h5>
+                    <!-- AJOUTER -->
+                    <a href="#" class="btn cta-btn">Quel(le) sportif(ve)
+                     êtes vous?</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero ends-->
+    <section class="nutrition">
+        <div class="container">
+            <div class="nutrition-info">
+                <div class="nutrition-description padding-right animate-left">
+                    <div class="global-headline">
+                        <h1 class="headline headline-dark">QUEL SPORT ?</h1>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i>
+                        </div>
+                    </div>
+                    <p>
+                        Les activités sportives peuvent être classées de
+                         diverses manières. Dans cet article,
+                         quatre catégories sont considérées :
+                         les sports athlétiques (course de vitesse,
+                          gymnastique, VTT, natation (jusqu'à 400 m)),
+                           les sports collectifs (football, basket,
+                           handball...), les sports d'endurance (cyclisme,
+                            ski de fond, natation (au-dessus de 400 m),
+                             randonnée...) et les sports de force
+                              (Arts Martiaux...).
+                    </p>
+                    <a href="#" class="btn body-btn">Conseils nutrionnels</a>
+                </div>
+                <div class="nutrition-info-img animate-right">
+                    <img src="/static/images/sport_food.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ***************************************************************** -->
+
+    <section class="nutrition">
+        <div class="container">
+            <div class="nutrition-info">
+
+                <div class="nutrition-description padding-right animate-left">
+                    <h2>Quel sport pratiquez vous ? </h2>
+
+                    <p>Choisissez votre type de sport dans
+                    la liste déroulante:</p>
+
+                    <form action="/action_page.php">
+                        <label for="categories_label">Votre sport :</label>
+                            <select id="categories" name="categories">
+                              <option value="athletique">Sport Athlétique</option>
+                              <option value="collectif">Sport Collecttif</option>
+                              <option value="endurance">Sport d'Endurance</option>
+                              <option value="force">Sport de Force</option>
+                            </select>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+{% include "modules/footer.html" %}
